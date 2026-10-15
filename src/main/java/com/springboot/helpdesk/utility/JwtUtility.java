@@ -14,7 +14,7 @@ import java.util.function.Function;
 
 @Component
 public class JwtUtility {
-    @Value("${jwt.secret}")
+    @Value("{jwt.secret}")
     private String SECRET_KEY;
     public String generateToken(String username) { //We use this
         Map<String, Object> claims = new HashMap<>();
